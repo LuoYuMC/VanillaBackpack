@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "inventory_changed": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": {
+                    "slots": {
+
+                    }
+                }
+            }
+        }
+    },
+    "display": {
+        "icon": {
+            "id": "bundle"
+        },
+        "title":"Inventory Changed",
+        "description": "",
+        "background": "gui/advancements/backgrounds/stone",
+        "hidden": true,
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "rewards": {
+        "function": "backpack:detect_bp"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "C": "#chests",
+        "B": "#bundles"
+    },
+    "pattern": [
+        "CCC",
+        "CBC",
+        "CCC"
+    ],
+    "result": {
+        "id": "bundle",
+        "components": {
+            "custom_data": {
+                "backpack": true,
+                "basic_size": 8,
+                "upgrades":[],
+                "pages":[],
+                "page_idx": 0
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+$execute if items entity @s container.$(inventory_idx) #bundles[custom_data~{backpack: 1b}, !custom_data~{inventory_idx: $(inventory_idx)}] run item modify entity @s container.$(inventory_idx) {function: "set_custom_data", "tag": {inventory_idx: $(inventory_idx)}}
+execute store result storage bp:player_data inventory_idx int 1.0 run scoreboard players add @s inventory_idx 1
+execute unless score @s inventory_idx matches 36 store result score @s inventory_idx run function backpack:detect_bp_ with storage bp:player_data
